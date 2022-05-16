@@ -7,4 +7,16 @@
             <class name="test.Day2" />
         </classes>
     </test>
+
+    <test name="Car loan">
+        <classes>
+            <class name="test.Day3" />
+        </classes>
+    </test>
+
+    <test name="Home loan">
+        <classes>
+            <class name="test.Day4" />
+        </classes>
+    </test>
 </suite>
