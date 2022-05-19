@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Day3 {
@@ -23,5 +24,10 @@ public class Day3 {
 
         //Rest API automation
         System.out.println("APILoginCar");
+    }
+
+    @AfterTest
+    public void lastExecution() {
+        System.out.println("I will execute last");
     }
 }
