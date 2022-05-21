@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
+    <parameter name="URL" value="qaclickacademy.com" />
     <test name="Personal loan">
         <classes>
             <class name="test.Day1">
@@ -17,7 +18,7 @@
         <classes>
             <class name="test.Day3" >
             <methods>
-                <exclude name="Mobile.*" />
+                <exclude name="API.*" />
             </methods>
             </class>
         </classes>

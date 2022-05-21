@@ -1,11 +1,13 @@
 package test;
 
+import com.beust.jcommander.Parameter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Day3 {
@@ -28,11 +30,13 @@ public class Day3 {
         System.out.println("I will execute before every test method in day 3 class");
     }
 
+    @Parameters({"URL"})
     @Test
-    public void WebLoginCarLoan() {
+    public void WebLoginCarLoan(String urlName) {
 
         //Selenium
         System.out.println("WebLoginCar");
+        System.out.println(urlName);
     }
 
     @Test(enabled = false)
