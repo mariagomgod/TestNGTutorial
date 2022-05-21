@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -10,6 +11,7 @@ public class Day1 {
     @Test
     public void Demo() {
         System.out.println("hello");
+        Assert.assertTrue(false);
     }
 
     @Test
