@@ -16,7 +16,7 @@ public class Listeners implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
-        System.out.println("I failed executed listeners pass code");
+        //System.out.println("I succesfully executed listeners pass code");
     }
 
     @Override
@@ -24,6 +24,7 @@ public class Listeners implements ITestListener {
         ITestListener.super.onTestFailure(result);
         //screenshot code
         //response if API is failed
+        System.out.println("I failed executed listeners pass code" + result.getName());
     }
 
     @Override
