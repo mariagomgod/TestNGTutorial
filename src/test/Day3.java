@@ -35,6 +35,20 @@ public class Day3 {
         System.out.println("WebLoginCar");
     }
 
+    @Test(enabled = false)
+    public void WebLoginSigInCarLoan() {
+
+        //Selenium
+        System.out.println("WebLoginSigInCar");
+    }
+
+    @Test(timeOut = 4000)
+    public void WebLoginSigOutCarLoan() {
+
+        //Selenium
+        System.out.println("WebLoginSigOutCar");
+    }
+
     @Test(groups = {"Smoke"})
     public void MobileLoginCarLoan() {
 
@@ -42,7 +56,7 @@ public class Day3 {
         System.out.println("MobileLoginCar");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"WebLoginCarLoan", "MobileLoginCarLoan"})
     public void loginAPICarLoan() {
 
         //Rest API automation
